@@ -1,0 +1,6 @@
+{
+  "name": "ChatMaster AI",
+  "description": "A WhatsApp-styled virtual assistant powered by Gemini 2.0 with RAG, image analysis, and voice-to-text capabilities.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

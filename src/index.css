@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-whatsapp-teal: #00a884;
+  --color-whatsapp-green: #25D366;
+  --color-whatsapp-blue: #34B7F1;
+  --color-whatsapp-light: #ECE5DD;
+  --color-whatsapp-dark: #075E54;
+  --color-whatsapp-border: #d1d7db;
+  --color-whatsapp-background: #f0f2f5;
+  --color-whatsapp-chat: #efeae2;
+  --color-whatsapp-bubble-user: #dcf8c6;
+  --color-whatsapp-bubble-ai: #ffffff;
+}
+
+body {
+  background-color: var(--color-whatsapp-background);
+  color: #111b21;
+}
+
+/* Custom scrollbar for chat feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ced0d1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aab0c4;
+}
+
+.chat-bg {
+  background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  opacity: 0.06;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.markdown-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.markdown-body p {
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body code {
+  background: rgba(0,0,0,0.05);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
